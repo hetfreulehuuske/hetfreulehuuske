@@ -1,0 +1,54 @@
+<header id="home-header" [ngClass]="{'header-fixed': isFixed}">
+  <div class="container" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+    <div class="home-logo mr-1">
+      <img src="assets/images/logo-full.png" alt="Egret logo">
+    </div>
+    <div fxFlex class="top-menu">
+      <button mat-button class="hometop-btn" scrollTo="intro-section">
+        <strong>home</strong>
+      </button>
+      <button mat-button class="hometop-btn" scrollTo="intro-section">
+        <strong>de vereniging</strong>
+      </button>
+      <button mat-button class="hometop-btn" scrollTo="portfolio-section">
+        <strong>een restauratie</strong>
+      </button>
+      <button mat-button class="hometop-btn" scrollTo="portfolio-detail-section">
+        <strong>details van dit monument</strong>
+      </button>
+      <button mat-button class="hometop-btn" scrollTo="portfolio-fotoalbum-section">
+        <strong>fotoalbum</strong>
+      </button>
+      <button mat-button class="hometop-btn" scrollTo="service-section">
+        <strong>organisaties</strong>
+      </button>
+      <span fxFlex></span>
+
+      <!-- Language Switcher
+      <mat-select class="hometop-btn" placeholder="" id="langToggle" [style.width]="'40px'" name="currentLang" [(ngModel)]="currentLang"
+        (change)="setLang()">
+        <mat-option *ngFor="let lang of availableLangs" [value]="lang.code" ngDefaultControl>{{ lang.name }}</mat-option>
+      </mat-select>
+
+       theme Switcher-
+      <button class="hometop-btn" mat-icon-button id="schemeToggle" [style.overflow]="'visible'" matTooltip="Color Schemes" [matMenuTriggerFor]="themeMenu"
+        class="topbar-button-right">
+        <mat-icon>format_color_fill</mat-icon>
+      </button>
+      <mat-menu class="hometop-btn" #themeMenu="matMenu">
+        <mat-grid-list class="theme-list" cols="2" rowHeight="48px">
+          <mat-grid-tile *ngFor="let theme of egretThemes" (click)="changeTheme(theme)">
+            <div mat-menu-item [title]="theme.name">
+              <div [style.background]="theme.baseColor" class="egret-swatch">{{theme.baseColor}}}</div>>
+              <mat-icon class="active-icon" *ngIf="theme.isActive">check</mat-icon>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-menu>
+    -->
+      <button mat-button id="dashboard-topbtn" class="hometop-btn" scrollTo="contact-section">
+        <strong>contact</strong>
+      </button>
+    </div>
+  </div>
+</header>
